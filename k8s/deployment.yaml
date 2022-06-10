@@ -76,7 +76,7 @@ spec:
   selector:
     app: kubwnews
   ports:
-  - port: 81
+  - port: 80
     targetPort: 8080
     nodePort: 30000
   type: LoadBalancer
