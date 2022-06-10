@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v3.0.0
         with:
           file: ./src/Dockerfile
-          context: ./src/Dockerfile
+          context: ./src
           push: true
           tags:  |
             viniciushora/estudo:kubenews-latest
