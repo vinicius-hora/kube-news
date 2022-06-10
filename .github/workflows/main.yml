@@ -42,7 +42,8 @@ jobs:
             viniciushora/estudo:kubenews-latest
             viniciushora/estudo:kubenews-${{github.run_number}}
   CD:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
+    needs: [CI]
     steps:
       - uses: actions/checkout@v3
       - name: Kubernetes Set Context
